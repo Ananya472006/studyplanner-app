@@ -146,6 +146,11 @@ const checkDb = (req, res, next) => {
   next();
 };
 
+// Health check endpoint for UptimeRobot
+app.get('/', (req, res) => {
+  res.status(200).send('OK');
+});
+
 // --- AUTH ENDPOINTS ---
 
 // Register Endpoint
