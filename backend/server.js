@@ -16,6 +16,13 @@ app.use(express.json());
 let pool = null;
 
 async function initializeDatabase() {
+  console.log('DB Config:', {
+    host: process.env.DB_HOST || 'localhost',
+    port: process.env.DB_PORT || '3306',
+    user: process.env.DB_USER || 'root',
+    password: (process.env.DB_PASSWORD || '').substring(0, 3) + '***',
+    ssl: (process.env.DB_HOST && process.env.DB_HOST !== 'localhost') ? 'enabled' : 'disabled'
+  });
   const configWithoutDb = {
     host: process.env.DB_HOST || 'localhost',
     port: parseInt(process.env.DB_PORT || '3306'),
