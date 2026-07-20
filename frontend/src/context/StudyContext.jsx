@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 import { generateSchedule } from '../utils/scheduler';
 
 const StudyContext = createContext();
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'https://studyplanner-app-cz3y.onrender.com';
 
 export const useStudy = () => useContext(StudyContext);
 
