@@ -1,0 +1,47 @@
+{
+  "subjects": [
+    {
+      "id": "1",
+      "name": "Mathematics",
+      "difficulty": "Hard",
+      "weeklyHours": 6,
+      "preferredDaysCount": 3
+    },
+    {
+      "id": "2",
+      "name": "Physics",
+      "difficulty": "Hard",
+      "weeklyHours": 4,
+      "preferredDaysCount": 2
+    },
+    {
+      "id": "3",
+      "name": "English Literature",
+      "difficulty": "Easy",
+      "weeklyHours": 2,
+      "preferredDaysCount": 2
+    },
+    {
+      "id": "4",
+      "name": "History",
+      "difficulty": "Medium",
+      "weeklyHours": 3,
+      "preferredDaysCount": 2
+    }
+  ],
+  "dailyBudget": 3,
+  "compulsorySingleSubject": false,
+  "xp": 0,
+  "streak": 0,
+  "lastActiveDate": "",
+  "history": [],
+  "schedule": {
+    "Monday": [],
+    "Tuesday": [],
+    "Wednesday": [],
+    "Thursday": [],
+    "Friday": [],
+    "Saturday": [],
+    "Sunday": []
+  }
+}

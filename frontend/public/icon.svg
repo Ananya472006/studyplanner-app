@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#2e1065" />
+      <stop offset="50%" stop-color="#0f0c1b" />
+      <stop offset="100%" stop-color="#020005" />
+    </radialGradient>
+    <linearGradient id="bolt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="50%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="256" cy="256" r="240" fill="url(#bg)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="8" />
+  
+  <!-- Outer Glow Ring -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="rgba(192, 132, 252, 0.15)" stroke-width="4" stroke-dasharray="20 10" />
+
+  <!-- Shield Shape / Stylized Quest Icon -->
+  <g filter="url(#glow)">
+    <!-- Lightning Bolt / Study Shield -->
+    <path d="M256,80 L380,140 L380,280 C380,360 256,432 256,432 C256,432 132,360 132,280 L132,140 Z" 
+          fill="none" stroke="url(#bolt)" stroke-width="12" stroke-linejoin="round" />
+    
+    <!-- Central Lightning Bolt -->
+    <polygon points="270,160 190,260 250,260 230,340 320,230 260,230" fill="url(#bolt)" />
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+{
+  "subjects": [],
+  "dailyBudget": 3,
+  "compulsorySingleSubject": false,
+  "xp": 0,
+  "streak": 0,
+  "lastActiveDate": "",
+  "history": [],
+  "schedule": {
+    "Monday": [],
+    "Tuesday": [],
+    "Wednesday": [],
+    "Thursday": [],
+    "Friday": [],
+    "Saturday": [],
+    "Sunday": []
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "studyquest-desktop",
+  "version": "1.0.0",
+  "description": "Desktop wrapper for StudyQuest",
+  "author": "StudyQuest",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . StudyQuest --platform=win32 --arch=x64 --out=dist --overwrite"
+  },
+  "devDependencies": {
+    "electron": "^34.0.0",
+    "electron-builder": "^25.1.8",
+    "electron-packager": "^17.1.2"
+  },
+  "build": {
+    "appId": "com.studyquest.app",
+    "productName": "StudyQuest",
+    "forceCodeSigning": false,
+    "win": {
+      "target": "portable",
+      "icon": "../frontend/public/icon.png",
+      "signDlls": false,
+      "sign": null
+    },
+    "files": [
+      "main.js",
+      "app/**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    }
+  }
+}

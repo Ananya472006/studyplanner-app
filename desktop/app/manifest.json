@@ -1,0 +1,17 @@
+{
+  "short_name": "StudyQuest",
+  "name": "StudyQuest - Gamified Study Planner",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "background_color": "#080511",
+  "theme_color": "#0f0c1b",
+  "display": "standalone",
+  "orientation": "portrait"
+}
